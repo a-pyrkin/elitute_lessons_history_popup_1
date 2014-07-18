@@ -28,7 +28,7 @@ $(document).ready(function(){
     });
 
 
-    $('.c-close-popup').click(onCarouselHiding);
+    $('.c-close-popup, .bg-overlay-dark').click(onCarouselHiding);
     
     $(document).on('keydown', function(e){
             if (e.keyCode == 27) {
