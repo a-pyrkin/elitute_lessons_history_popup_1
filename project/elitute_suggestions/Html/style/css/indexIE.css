@@ -1,1 +1,3 @@
-.item{background:url('../images/fonIE8.png')}
+.item{background:url('../images/fonIE8.png');
+	-ms-filter:"progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=4)";
+	}
