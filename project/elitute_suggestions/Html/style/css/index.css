@@ -6,7 +6,7 @@
 
 	/* Slider header */
 
-#b-slider{width:950px;height:261px;margin:0 auto;padding:0;position:relative;background:#fff;border:1px solid #d0d0d0;border-radius:4px}
+#b-slider{width:950px;margin:0 auto;padding:0;position:relative;background:#fff;border:1px solid #d0d0d0;border-radius:4px}
 	#b-slider h1{display:block;padding:12px 0 0 20px;font:24px TrebuchetMS;color:#7cbe28}
 
 	.c-slider-control-left,
@@ -25,7 +25,7 @@
 		.arrow-left{width:10px;height:12px;margin:9px;display:block;background: url('../images/sprites.png') no-repeat -17px -24px}
 		.arrow-right{width:10px;height:11px;margin:9px 13px 0;display:block;background: url('../images/sprites.png') no-repeat -57px -24px}
 
-	.c-visible-part-slider{width:820px;margin:0 auto;padding:8px 0 0;overflow:hidden}
+	.c-visible-part-slider{width:820px;margin:0 auto;padding:8px 0;overflow:hidden}
 	.c-content-slider{width:4860px;margin-left:-18px;padding:0 0 7px;border-spacing: 18px 0}
 			.c-shape-user-one,
 			.c-shape-user-two{width:379px;display:table-cell;padding:7px 12px 10px 12px;background:rgba(230,248,255,0.6);position:relative;z-index:1;
