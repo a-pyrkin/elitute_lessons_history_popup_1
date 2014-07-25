@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/demo.css">
+        <link rel="stylesheet" href="css/style4.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script src="js/js.js"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/jquery.dropdown.js"></script>
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Container -->
+
+        <div id="content">
+            <header class="b-header-logo">
+                <a class="b-logoCompany" href="#"><img src="img/logoCompany.png"></a>
+                <h1>SECTION TITLE</h1>
+            </header>
+            <form id="formid" method="post" name="user_contact_form">
+                <div class="b-page-control">
+                    <span class="b-back-page"><i></i>Back</span>
+                    <span class="b-next-page">Next<i></i></span>
+                </div>
+                <div class="b-input-date-about-user">
+                    <input name="User-email" id="email" class="b-user-email" type="text" placeholder="User Email">
+                    <input name="User-name" id="name" class="b-user-name" type="text" placeholder="User Name">
+                </div>
+                <select id="cd-dropdown" class="cd-select" name="select">
+                    <option value="-1" selected>Countru</option>
+                    <option value="Belarus" class="icon-tux">Belarus</option>
+                    <option value="Russian" class="icon-finder">Russian</option>
+                    <option value="Russian" class="icon-windows">Russian</option>
+                    <option value="Russian" class="icon-android">Russian</option>
+                </select>
+                <div class="b-user-agreement">
+                    <div class="b-checkbox-user-agreement">
+                        <input name="I-Agree-Condition" id="first-checkbox" class="view-checkbox-checked" type="checkbox">
+                    </div>
+                    <div class="b-user-agreement-with">
+                        <span>I&nbsp;agree&nbsp;with <a href="#">Terms</a>&nbsp;and&nbsp;<a href="#">   Condition</a></span>
+                    </div>
+                </div>
+                <h1 class="b-shipping">Shipping:</h1>
+                <table class="b-radio-choice">
+                    <tbody>
+                        <tr class="b-choice-user">
+                            <td>
+                                <i class="c-Post"></i>
+                                <input id="first-radio" type="radio" class="view-radio-selected" value="Post" name="group">
+                            </td>
+                            <td>
+                                <span>By&nbsp;Post</span>
+                            </td>
+                        </tr>
+                        <tr class="b-choice-user">
+                            <td>
+                                <i class="c-self-pick-Up"></i>
+                                <input id="second-radio" type="radio" class="view-radio-selected" value="Self-Up" name="group">
+                            </td>
+                            <td>
+                                <span>Self&nbsp;pick&nbsp;up</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="button">
+                    <input id="button" type="button" value="Buy">
+                </div>
+            </form>
+        </div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>       
+<script type="text/javascript" src="js/jquery.dropdown.js"></script>
+<script type="text/javascript">
+            
+            $( function() {
+                
+                $( '#cd-dropdown' ).dropdown( {
+                    gutter : 5,
+                    stack : false,
+                    delay : 100,
+                    slidingIn : 100
+                } );
+
+            });
+
+        </script>
+
+    </body>
+</html>

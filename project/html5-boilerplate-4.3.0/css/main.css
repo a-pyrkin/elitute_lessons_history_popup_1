@@ -1,0 +1,460 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+@font-face{
+    font-family:Raleway-Regular;
+    src:local("Raleway-Regular"),
+        url("../Fonts/Raleway-Regular.ttf");
+}
+@font-face{
+    font-family:Raleway-Light;
+    src:local("Raleway-Light"),
+        url("../Fonts/Raleway-Light.ttf");
+}
+@font-face{
+    font-family:Raleway-Heavy;
+    src:local("Raleway-Heavy"),
+        url("../Fonts/Raleway-Heavy.ttf");
+}
+@font-face{
+    font-family:Raleway-Bold;
+    src:local("Raleway-Bold"),
+        url("../Fonts/Raleway-Bold.ttf");
+}
+@font-face{
+    font-family:FanwoodText-Italic;
+    src:local("FanwoodText-Italic"),
+        url("../Fonts/FanwoodText-Italic.ttf");
+}
+    h1,
+    h2,
+    h3,
+    h4,
+    h5{margin:0 !important}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+
+
+    h2,
+    h5,
+    h4,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+@font-face{
+    font-family:Futura-Regular;
+    src:local("Futura-Regular"),
+        url('../Fonts/Futura-Regular.ttf');
+}
+
+@font-face{
+    font-family:Futura-light;
+    src:local("Futura-light"),
+        url('../Fonts/Futura-light.ttf');
+}
+    
+
+ {
+  width: 300px;
+  margin: 40px auto;
+}
+ label {
+  font-size: 13px;
+  font-weight: bold;
+  color: #444444;
+  display: block;
+}
+ input {
+  display: block;
+  border: 2px solid #cfcfcf;
+  font-size: 14px;
+  color: #444444;
+  padding: 7px 7px 8px;
+  width: 250px;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+ input:focus {
+  outline: none;
+  border-color: #07a6e6;
+}
+ .btn_submit {
+  border: none;
+  width: 180px;
+  text-align: center;
+  background: #07a6e6;
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  height: 35px;
+  line-height: 28px;
+  padding: 0;
+}
+ .btn_submit:hover {
+  background: #009ac2;
+}
+ .btn_submit:active {
+  box-shadow: inset 0 2px 2px rgba(0,0,0,0.2);
+}
+ .btn_submit.disabled,
+ .btn_submit.disabled:hover {
+  background: #afdde6;
+  cursor: default;
+}
+
+#content{width:608px;margin:0 auto}
+    .b-header-logo{padding:0 0 8%}
+        .b-logoCompany{padding:2.5% 0 0;display:inline-block}
+        .b-header-logo h1{padding:4% 24.5% 0 0;position:relative;float:right;font:40px Futura-Regular;color:#000}
+
+    .b-page-control{display:block}
+        .b-back-page,
+        .b-next-page{display:inline-block;font:36px Futura-Regular;color:#e1111b;cursor:pointer}
+        .b-next-page{position:relative;float:right}
+            .b-back-page i{width:19px;height:37px;margin:0 12px 0 0;display:block;position:relative;float:left;background: url('../img/Sprites-laba3.png') no-repeat -37px -44px}
+            .b-next-page i{width:19px;height:37px;margin:0 0 0 12px;display:block;position:relative;float:right;background: url('../img/Sprites-laba3.png') no-repeat -125px -44px}
+
+    .b-input-date-about-user,
+    .b-choice-user{display:block}
+        .b-user-email,
+        .b-user-name{width:87%;height:88px;margin:4% 2%;padding:0 4%;font:37px Futura-Regular;color:#dcdcdc}
+            
+        .b-choice-user input{display:none}
+        .c-Post,
+        .c-self-pick-Up{width:84px;height:84px;display:block;background-color:#e5e4e5;border-radius:43px;border:1px solid #a5a5a5}
+
+    .b-user-agreement{margin:0;display:table-cell;border-spacing:25px 0}
+        .b-checkbox-user-agreement{width:16%;height:84px;display:table-cell;background-color:#f8f7f6;z-index:1;border:1px solid #a5a5a5}
+            .b-checkbox-user-agreement:hover{cursor:pointer}
+        .view-checkbox-checked{display:none}
+            .b-user-agreement input{margin:36px;position:absolute;z-index:2}
+        .b-user-agreement-with{display:table-cell}
+            .b-user-agreement-with span{width:64%;padding:0 15% 0 0;font:36px Futura-light;color:#000}
+            .b-user-agreement-with a{color:#e1111b}
+                .b-user-agreement-with a:hover{text-decoration:none}
+
+    .b-shipping{padding:2%;display:block;font:40px Futura-Regular;color:#000}
+
+
+    .b-choice-user{display:table;font:36px Futura-Regular;border-spacing:25px 4px;color:#5c5b5a}
+
+    #button{margin:10% 0;padding:0}
+        #button input{margin:0 auto;display:block;padding:6% 50%;font:40px Futura-Regular;color:#000;background: #e0111b;border:none;cursor:pointer}
+
+    .input-radio{padding:2% 0}
+        .input-radio i{width:3%;height:55px;border-radius:29px;position:absolute;background:#fff;border:1px solid #a5a5a5;display:inline-block;}
+            .input-radio i:hover{cursor:pointer;}
+
+    .input-radio span{display:block;padding:1% 0 0 12%}
+    
+    .cd-dropdown > span span[class^="icon-"], .cd-dropdown > span span[class*=" icon-"]{padding:0 30px 0 5px}
+    
+    .b-list{display:inline-block}
+        .cd-dropdown{height: 60px;width: 529px;margin: 13px;margin-bottom:8%;font-size: 30px;color: #a5a5a5;background-color: #f8f7f6}
+        .cd-dropdown > span{border:1px solid #a5a5a5;font-size:30px;font-style:Futura-Regular}
+        .cd-dropdown ul li span{padding:0 30px 0 35px}
+
+    .active-radio{background:url('../img/Sprites-laba3.png') no-repeat -155px -126px #f8f7f6}
+
+    .active-checkbox{background: url('../img/Sprites-laba3.png') no-repeat -20px -123px #e5e4e5}
